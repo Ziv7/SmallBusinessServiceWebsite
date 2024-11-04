@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Repay Yourself</title>
+	<link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic structural style */
+        body, html {
+            margin: 0;
+            padding: 0;
+			line-height: 1.6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+        }
+		
+		.container {
+			width: 80%;
+			margin: auto;
+			overflow: hidden;
+		}
+
+
+        header {
+            background-color: #55738D;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: url('./7.jpg') no-repeat center center/cover;
+            padding: 100px 0;
+            text-align: center;
+            color: black;
+        }
+		
+		#about {
+			background-color: #96A7B6; /* Replace with your desired color */
+			/* padding: 40px; Optional: Add padding for aesthetics 
+			color: #333;  Optional: Set text color */
+		}
+		
+		#gallery {
+			background-color: #CBC8C4; /* Replace with your desired color */
+			/* padding: 40px; Optional: Add padding for aesthetics 
+			color: #333;  Optional: Set text color */
+		}
+		
+		#contact {
+			background-color: #A1B3B8     ; /* Replace with your desired color */
+			/* padding: 40px; Optional: Add padding for aesthetics 
+			color: #333;  Optional: Set text color */
+		}
+		
+        .cta-button {
+            display: inline-block;
+            background-color: #70805D;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #d86b14;
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .about-img {
+            width: 30%;
+			height: auto;
+            border-radius: 8px;
+        }
+
+        .service {
+            margin-bottom: 40px;
+        }
+
+        .service-img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .service-img:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            transition: box-shadow 0.3s;
+        }
+
+        .gallery-grid img:hover {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        footer {
+            background-color: #333;
+            color: #f1f1f1;
+            text-align: center;
+            padding: 15px 0;
+        }
+		
+		<!-- Responsive styles -->
+		
+		/* Base styles for all devices */
+		body {
+			font-family: 'Arial', sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		
+		/* Responsive styles for tablets and smaller devices */
+		@media only screen and (max-width: 768px) {
+			header, footer {
+				text-align: center; /* Center align header and footer text */
+			}
+		
+			nav ul {
+				flex-direction: column; /* Stack navigation items vertically */
+			}
+		
+			img {
+				width: 100%; /* Full width for smaller images */
+				height: auto; /* Maintain aspect ratio */
+			}
+		
+			#about {
+				padding: 20px; /* Reduced padding for smaller screens */
+			}
+		
+			.about-content {
+				flex-direction: column; /* Stack content vertically */
+				align-items: center; /* Center align content */
+			}
+		
+			.about-img {
+				width: 80%; /* Optimize image size for small screens */
+			}
+		}
+		
+		/* Responsive styles for larger devices, like desktops */
+		@media only screen and (min-width: 769px) {
+			.container {
+				max-width: 1200px; /* Set max width for larger screens */
+				margin: auto; /* Center the container */
+			}
+		
+			nav ul {
+				justify-content: space-around; /* Space navigation items evenly */
+			}
+		
+			#about {
+				padding: 40px; /* Add more padding for larger screens */
+			}
+		
+			.about-content {
+				flex-direction: row; /* Keep content side by side */
+				align-items: flex-start; /* Align content to the top */
+			}
+		
+			.about-img {
+				width: 50%; /* Optimize image size for larger screens */
+			}
+		}
+		
+		
+		
+		
+		
+		
+    </style>
+
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Repay Yourself</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./index.html#home">Home</a></li>
+                    <li><a href="./index.html#about">About Us</a></li>
+                    <li><a href="./index.html#services">Services</a></li>
+                    <li><a href="./index.html#gallery">Gallery</a></li>
+                    <li><a href="./index.html#testimonials">Testimonials</a></li>
+                    <li><a href="./index.html#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Homepage -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Expert Masseuse Services for a Healthier You</h2>
+            <p>Personalized treatment plans to get the best of yourself.</p>
+            <a href="https://calendly.com/ACCOUNTNAME" class="cta-button">Schedual An Appointment</a>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about">
+        <div class="container">
+            <h2>Certified Professional Masseuse</h2>
+            <div class="about-content">
+                <img src="./PureEssense.jpg" alt="About Us" class="about-img">
+                <div class="about-text">
+					<h3>The Approach</h3>
+                    <p>Providing top-notch Masseuse services to help you recover and improve your quality of life.
+					<br/>Experties: Advanced Swedish Massage, Sports Massage, Chinese Deep Tissue Massage, Foot Massage, Trigger Points and Head, Face & Neck Massage</p><br/><br/>
+                    <h3>How It Works?</h3>
+                    <p>A tailored treatment based on your capatabilities and strength.
+					<br/>Proividing the most effective treatment for your Muscular and nervous system needs.
+					<br/>Using deep breaths, muscle tension modular technique and suitable trigger points pressure.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service">
+                <!-- IMAGE PLACEHODER <img src="" alt="Manual Therapy" class="service-img">-->
+                <h3>Advanced Swedish Massage</h3>
+                <p>Hands-on techniques to improve movement and relieve pain.</p>
+            </div>
+            <div class="service">
+                <!-- IMAGE PLACEHODER <img src="" alt="Exercise Therapy" class="service-img">-->
+                <h3>Sports Massage Therapy</h3>
+                <p>Customized exercise programs to strengthen and rehabilitate.</p>
+            </div>
+            <div class="service">
+                <!-- IMAGE PLACEHODER <img src="" alt="Sports Injuries" class="service-img">-->
+                <h3>Foot Massage</h3>
+                <p>Treatment strategies for full body cureness .</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery">
+        <div class="container">
+            <!-- <h2>Our Gallery</h2> --> 
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="./1.jpg" alt="Gallery">
+                </div>
+                <div class="gallery-item">
+                    <img src="./2.jpg" alt="Gallery">
+                </div>
+                <div class="gallery-item">
+                    <img src="./3.jpg" alt="Gallery">
+                </div>
+                <div class="gallery-item">
+                    <img src="./4.jpg" alt="Gallery">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+        <div class="container">
+            <h2>What Our Patients Say</h2>
+            <div class="testimonial">
+                <p>"The physiotherapy I received was outstanding. I feel much better and more active now!" - Jane D.</p>
+            </div>
+            <div class="testimonial">
+                <p>"The personalized care and attention I got from the team made all the difference in my recovery." - John S.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="massageForm" action="https://formspree.io/f/ACCOUNTNAME" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required="">
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required="">
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required="">
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required=""></textarea>
+                                
+                <button type="submit" class="cta-button">Submit</button>
+            </form>
+        </div>
+    </section>
+	
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2024 Repay Yourself. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="./index.html#home">Home</a> |
+                <a href="./index.html#about">About Us</a> |
+                <a href="./index.html#services">Services</a> |
+                <a href="./index.html#gallery">Gallery</a> |
+                <a href="./index.html#testimonials">Testimonials</a> |
+                <a href="index.html#contact">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+
+</body></html>
